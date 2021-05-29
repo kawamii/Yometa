@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0006811E265A33CB0053774F /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006811D265A33CB0053774F /* LibraryViewController.swift */; };
+		00068123265A34480053774F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00068122265A34480053774F /* TextViewController.swift */; };
+		00068128265A34600053774F /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00068127265A34600053774F /* WordsViewController.swift */; };
+		0006812D265A347B0053774F /* AllWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006812C265A347B0053774F /* AllWordsViewController.swift */; };
+		00068132265A34AC0053774F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00068131265A34AC0053774F /* RegistrationViewController.swift */; };
+		0045F46B266299E300516F68 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045F46A266299E300516F68 /* ScanViewController.swift */; };
 		008124F72659F85A002A6D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124F62659F85A002A6D0E /* AppDelegate.swift */; };
 		008124F92659F85A002A6D0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124F82659F85A002A6D0E /* SceneDelegate.swift */; };
 		008124FB2659F85A002A6D0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124FA2659F85A002A6D0E /* ViewController.swift */; };
@@ -15,6 +21,7 @@
 		008125032659F862002A6D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008125012659F862002A6D0E /* LaunchScreen.storyboard */; };
 		0081250E2659F863002A6D0E /* YometaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081250D2659F863002A6D0E /* YometaTests.swift */; };
 		008125192659F863002A6D0E /* YometaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008125182659F863002A6D0E /* YometaUITests.swift */; };
+		00C9C7AC266117E600C8697D /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9C7AB266117E600C8697D /* LibraryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0006811D265A33CB0053774F /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		00068122265A34480053774F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		00068127265A34600053774F /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
+		0006812C265A347B0053774F /* AllWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsViewController.swift; sourceTree = "<group>"; };
+		00068131265A34AC0053774F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		0045F46A266299E300516F68 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		008124F32659F85A002A6D0E /* Yometa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yometa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008124F62659F85A002A6D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		008124F82659F85A002A6D0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,7 @@
 		008125142659F863002A6D0E /* YometaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YometaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		008125182659F863002A6D0E /* YometaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YometaUITests.swift; sourceTree = "<group>"; };
 		0081251A2659F863002A6D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C9C7AB266117E600C8697D /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,13 @@
 				008124FF2659F862002A6D0E /* Assets.xcassets */,
 				008125012659F862002A6D0E /* LaunchScreen.storyboard */,
 				008125042659F862002A6D0E /* Info.plist */,
+				0006811D265A33CB0053774F /* LibraryViewController.swift */,
+				00068122265A34480053774F /* TextViewController.swift */,
+				00068127265A34600053774F /* WordsViewController.swift */,
+				0006812C265A347B0053774F /* AllWordsViewController.swift */,
+				00068131265A34AC0053774F /* RegistrationViewController.swift */,
+				00C9C7AB266117E600C8697D /* LibraryTableViewController.swift */,
+				0045F46A266299E300516F68 /* ScanViewController.swift */,
 			);
 			path = Yometa;
 			sourceTree = "<group>";
@@ -258,8 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00068128265A34600053774F /* WordsViewController.swift in Sources */,
+				0006812D265A347B0053774F /* AllWordsViewController.swift in Sources */,
+				00068132265A34AC0053774F /* RegistrationViewController.swift in Sources */,
+				00068123265A34480053774F /* TextViewController.swift in Sources */,
 				008124FB2659F85A002A6D0E /* ViewController.swift in Sources */,
 				008124F72659F85A002A6D0E /* AppDelegate.swift in Sources */,
+				00C9C7AC266117E600C8697D /* LibraryTableViewController.swift in Sources */,
+				0045F46B266299E300516F68 /* ScanViewController.swift in Sources */,
+				0006811E265A33CB0053774F /* LibraryViewController.swift in Sources */,
 				008124F92659F85A002A6D0E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +465,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J549KD48B;
 				INFOPLIST_FILE = Yometa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +485,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J549KD48B;
 				INFOPLIST_FILE = Yometa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
