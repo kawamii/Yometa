@@ -88,7 +88,9 @@ extension ScanViewController: VNDocumentCameraViewControllerDelegate {
             }
             DispatchQueue.main.async(execute: {
                 // textViewに表示する
+                self.resultingText = self.resultingText.replacingOccurrences(of: "\n", with: " ")
                 self.textView.text = self.resultingText
+                //print(self.resultingText)
             })
         }
     }
