@@ -15,12 +15,22 @@ class ScanViewController: UIViewController {
     
     var requests = [VNRequest]()
     var resultingText = ""
+    var text = ""
+    var textWords: [String] = []
+    var orderSet: NSOrderedSet = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setupVision()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toRegisterTextViewController" {
+            let next = segue.destination as? RegisterTextViewController
+            next?.textWords = self.textWords
+        }
     }
     
     func setupVision() {
@@ -50,6 +60,23 @@ class ScanViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
         }
+    
+    
+    @IBAction func registrationButtonTapped(_ sender: UIButton) {
+        text = textView.text!
+        text = text.replacingOccurrences(of: ",", with: "")
+        text = text.replacingOccurrences(of: ".", with: "")
+        text = text.replacingOccurrences(of: "?", with: "")
+        //print(text)
+        textWords = text.components(separatedBy: " ")
+        textWords.sort()
+        //print(textWords)
+        orderSet = NSOrderedSet(array: textWords)
+        textWords = orderSet.array as! [String]
+        textWords.removeAll(where: {$0 == ""})
+        print(textWords)
+        performSegue(withIdentifier : "toRegisterTextViewController", sender: nil)
+    }
 
     /*
     // MARK: - Navigation
