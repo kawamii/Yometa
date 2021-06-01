@@ -17,6 +17,7 @@
 		0009B7252663E51E00701232 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0009B7242663E51E00701232 /* RealmSwift */; };
 		0009B72A2663F71300701232 /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009B7292663F71300701232 /* TextData.swift */; };
 		0045F46B266299E300516F68 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045F46A266299E300516F68 /* ScanViewController.swift */; };
+		00690C92266656C800358673 /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C91266656C800358673 /* LibraryTableViewCell.swift */; };
 		008124F72659F85A002A6D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124F62659F85A002A6D0E /* AppDelegate.swift */; };
 		008124F92659F85A002A6D0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124F82659F85A002A6D0E /* SceneDelegate.swift */; };
 		008124FB2659F85A002A6D0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124FA2659F85A002A6D0E /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 		0009B71C2663A47D00701232 /* RegisterTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextViewController.swift; sourceTree = "<group>"; };
 		0009B7292663F71300701232 /* TextData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextData.swift; sourceTree = "<group>"; };
 		0045F46A266299E300516F68 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		00690C91266656C800358673 /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 		008124F32659F85A002A6D0E /* Yometa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yometa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008124F62659F85A002A6D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		008124F82659F85A002A6D0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				008124F82659F85A002A6D0E /* SceneDelegate.swift */,
 				008124FA2659F85A002A6D0E /* ViewController.swift */,
 				008124FC2659F85A002A6D0E /* Main.storyboard */,
+				00690C91266656C800358673 /* LibraryTableViewCell.swift */,
 				008124FF2659F862002A6D0E /* Assets.xcassets */,
 				008125012659F862002A6D0E /* LaunchScreen.storyboard */,
 				008125042659F862002A6D0E /* Info.plist */,
@@ -300,6 +303,7 @@
 				0009B71D2663A47D00701232 /* RegisterTextViewController.swift in Sources */,
 				0006812D265A347B0053774F /* AllWordsViewController.swift in Sources */,
 				00068132265A34AC0053774F /* RegistrationViewController.swift in Sources */,
+				00690C92266656C800358673 /* LibraryTableViewCell.swift in Sources */,
 				00068123265A34480053774F /* TextViewController.swift in Sources */,
 				008124FB2659F85A002A6D0E /* ViewController.swift in Sources */,
 				008124F72659F85A002A6D0E /* AppDelegate.swift in Sources */,
