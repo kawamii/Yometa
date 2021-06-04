@@ -6,15 +6,29 @@
 //
 
 import UIKit
+import RealmSwift
 
 class WordsTableViewController: UITableViewController {
+    
+    @IBOutlet var table: UITableView!
+    var realm: Realm!
+    
+    var texts: Results<Text>!
     
     var textNum = Int()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(textNum)
+        table.delegate = self
+        table.dataSource = self
+        
+        realm = try! Realm()
+        
+        texts = realm.objects(Text.self)
+        table.reloadData()
+        
+        //print(textNum)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -22,28 +36,40 @@ class WordsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        texts = realm.objects(Text.self)
+        table.reloadData()
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return texts[textNum].registrationWords.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "registrationCell", for: indexPath) as! RegistrationWordTableViewCell
+        
+        cell.english.text = texts[textNum].registrationWords[indexPath.row].english
+        cell.japanese.text = texts[textNum].registrationWords[indexPath.row].japanese
         // Configure the cell...
 
         return cell
     }
-    */
+    
+    override func tableView (_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 66
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -243,24 +243,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="registrationCell" rowHeight="65" id="JEb-nh-mr7" customClass="RegistrationWordTableViewCell" customModule="Yometa" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="registrationCell" rowHeight="66" id="JEb-nh-mr7" customClass="RegistrationWordTableViewCell" customModule="Yometa" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JEb-nh-mr7" id="4YH-Zq-YEM" customClass="RegistrationWordTableViewCell" customModule="Yometa" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB9-Lg-jcE">
-                                            <rect key="frame" x="61" y="6" width="59" height="30"/>
+                                            <rect key="frame" x="16" y="5" width="343" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oce-hf-bk3">
-                                            <rect key="frame" x="61" y="37" width="46" height="23"/>
+                                            <rect key="frame" x="16" y="33" width="343" height="23"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -270,6 +270,10 @@
                                         <outlet property="japanese" destination="oce-hf-bk3" id="5yw-jY-242"/>
                                     </connections>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="english" destination="TB9-Lg-jcE" id="nva-GV-fII"/>
+                                    <outlet property="japanese" destination="oce-hf-bk3" id="mga-KV-iEm"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -278,10 +282,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="iZX-05-utw"/>
+                    <connections>
+                        <outlet property="table" destination="Rd1-fb-50r" id="SeO-Pe-byb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3M5-TX-GRk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2551" y="-154"/>
+            <point key="canvasLocation" x="2549.5999999999999" y="-154.43349753694582"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="yyI-q4-Ly2">
