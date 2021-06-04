@@ -38,6 +38,21 @@ class RegistrationViewController: UIViewController {
         texts = realm.objects(Text.self)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            self.view.endEditing(true)
+    }
+    
+    @IBAction func registerWord() {
+        let registrationWord = RegistrationWord()
+        registrationWord.english = englishTextField.text ?? "Undefined"
+        registrationWord.japanese = japaneseTextField.text ?? "Undefined"
+        let tx = realm.objects(Text.self)
+        try! realm.write {
+            tx[textNum].registrationWords.append(registrationWord)
+        }
+        print(tx[textNum].registrationWords)
+        self.navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation

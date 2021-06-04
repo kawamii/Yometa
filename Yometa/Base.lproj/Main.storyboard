@@ -317,6 +317,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh5-Si-uvC">
+                                <rect key="frame" x="162" y="628" width="51" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="registerWord" destination="yqD-a1-GN8" eventType="touchUpInside" id="cEp-d0-WGb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UIR-lD-8lC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
