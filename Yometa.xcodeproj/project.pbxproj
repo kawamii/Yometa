@@ -16,8 +16,13 @@
 		0009B7232663E51E00701232 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0009B7222663E51E00701232 /* Realm */; };
 		0009B7252663E51E00701232 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0009B7242663E51E00701232 /* RealmSwift */; };
 		0009B72A2663F71300701232 /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009B7292663F71300701232 /* TextData.swift */; };
+		0018604526698D9F000683E6 /* AllWordsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018604426698D9F000683E6 /* AllWordsTableViewCell.swift */; };
 		0045F46B266299E300516F68 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045F46A266299E300516F68 /* ScanViewController.swift */; };
 		00690C92266656C800358673 /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C91266656C800358673 /* LibraryTableViewCell.swift */; };
+		00690C972666918600358673 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C962666918600358673 /* WordsTableViewController.swift */; };
+		00690C9C266695D400358673 /* RegistrationWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C9B266695D400358673 /* RegistrationWordTableViewCell.swift */; };
+		00724FCB26679CED00CDBDF5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00724FCA26679CED00CDBDF5 /* icon.png */; };
+		0078DA8026694758008EA53D /* AllWordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0078DA7F26694758008EA53D /* AllWordsTableViewController.swift */; };
 		008124F72659F85A002A6D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124F62659F85A002A6D0E /* AppDelegate.swift */; };
 		008124F92659F85A002A6D0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124F82659F85A002A6D0E /* SceneDelegate.swift */; };
 		008124FB2659F85A002A6D0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124FA2659F85A002A6D0E /* ViewController.swift */; };
@@ -54,8 +59,13 @@
 		00068131265A34AC0053774F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		0009B71C2663A47D00701232 /* RegisterTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextViewController.swift; sourceTree = "<group>"; };
 		0009B7292663F71300701232 /* TextData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextData.swift; sourceTree = "<group>"; };
+		0018604426698D9F000683E6 /* AllWordsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsTableViewCell.swift; sourceTree = "<group>"; };
 		0045F46A266299E300516F68 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		00690C91266656C800358673 /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
+		00690C962666918600358673 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
+		00690C9B266695D400358673 /* RegistrationWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationWordTableViewCell.swift; sourceTree = "<group>"; };
+		00724FCA26679CED00CDBDF5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0078DA7F26694758008EA53D /* AllWordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsTableViewController.swift; sourceTree = "<group>"; };
 		008124F32659F85A002A6D0E /* Yometa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yometa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008124F62659F85A002A6D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		008124F82659F85A002A6D0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +133,7 @@
 		008124F52659F85A002A6D0E /* Yometa */ = {
 			isa = PBXGroup;
 			children = (
+				00724FCA26679CED00CDBDF5 /* icon.png */,
 				008124F62659F85A002A6D0E /* AppDelegate.swift */,
 				008124F82659F85A002A6D0E /* SceneDelegate.swift */,
 				008124FA2659F85A002A6D0E /* ViewController.swift */,
@@ -140,6 +151,10 @@
 				0045F46A266299E300516F68 /* ScanViewController.swift */,
 				0009B71C2663A47D00701232 /* RegisterTextViewController.swift */,
 				0009B7292663F71300701232 /* TextData.swift */,
+				00690C962666918600358673 /* WordsTableViewController.swift */,
+				00690C9B266695D400358673 /* RegistrationWordTableViewCell.swift */,
+				0078DA7F26694758008EA53D /* AllWordsTableViewController.swift */,
+				0018604426698D9F000683E6 /* AllWordsTableViewCell.swift */,
 			);
 			path = Yometa;
 			sourceTree = "<group>";
@@ -272,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00724FCB26679CED00CDBDF5 /* icon.png in Resources */,
 				008125032659F862002A6D0E /* LaunchScreen.storyboard in Resources */,
 				008125002659F862002A6D0E /* Assets.xcassets in Resources */,
 				008124FE2659F85A002A6D0E /* Main.storyboard in Resources */,
@@ -300,15 +316,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				00068128265A34600053774F /* WordsViewController.swift in Sources */,
+				0078DA8026694758008EA53D /* AllWordsTableViewController.swift in Sources */,
 				0009B71D2663A47D00701232 /* RegisterTextViewController.swift in Sources */,
 				0006812D265A347B0053774F /* AllWordsViewController.swift in Sources */,
 				00068132265A34AC0053774F /* RegistrationViewController.swift in Sources */,
+				00690C9C266695D400358673 /* RegistrationWordTableViewCell.swift in Sources */,
 				00690C92266656C800358673 /* LibraryTableViewCell.swift in Sources */,
 				00068123265A34480053774F /* TextViewController.swift in Sources */,
 				008124FB2659F85A002A6D0E /* ViewController.swift in Sources */,
+				00690C972666918600358673 /* WordsTableViewController.swift in Sources */,
 				008124F72659F85A002A6D0E /* AppDelegate.swift in Sources */,
 				00C9C7AC266117E600C8697D /* LibraryTableViewController.swift in Sources */,
 				0009B72A2663F71300701232 /* TextData.swift in Sources */,
+				0018604526698D9F000683E6 /* AllWordsTableViewCell.swift in Sources */,
 				0045F46B266299E300516F68 /* ScanViewController.swift in Sources */,
 				0006811E265A33CB0053774F /* LibraryViewController.swift in Sources */,
 				008124F92659F85A002A6D0E /* SceneDelegate.swift in Sources */,
@@ -488,14 +508,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J549KD48B;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 3QAR8SQMZX;
 				INFOPLIST_FILE = Yometa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.Kawakami.Boy.Yometa;
+				PRODUCT_BUNDLE_IDENTIFIER = app.Kawakami.Boy.Yometa1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,14 +529,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J549KD48B;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 3QAR8SQMZX;
 				INFOPLIST_FILE = Yometa/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.Kawakami.Boy.Yometa;
+				PRODUCT_BUNDLE_IDENTIFIER = app.Kawakami.Boy.Yometa1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

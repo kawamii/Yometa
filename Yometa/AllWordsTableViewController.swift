@@ -1,27 +1,34 @@
 //
-//  LibraryTableViewController.swift
+//  AllWordsTableViewController.swift
 //  Yometa
 //
-//  Created by 川上知宏 on 2021/05/28.
+//  Created by 川上知宏 on 2021/06/04.
 //
 
 import UIKit
 import RealmSwift
 
-class LibraryTableViewController: UITableViewController {
+class AllWordsTableViewController: UITableViewController {
+
+    var textNum = Int()
+    
+    var indexNum = 0
     
     @IBOutlet var table: UITableView!
     var realm: Realm!
-    var texts: Results<Text>!
-    @IBOutlet var textTite: UILabel!
-    var indexNum = 0
     
-    @IBAction func back(sender: UIStoryboardSegue) {
-        
-    }
+    var texts: Results<Text>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        //print(textNum)
         
         table.delegate = self
         table.dataSource = self
@@ -30,12 +37,6 @@ class LibraryTableViewController: UITableViewController {
         
         texts = realm.objects(Text.self)
         table.reloadData()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -53,26 +54,23 @@ class LibraryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return texts.count
+        return texts[textNum].textWords.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "libraryCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "allWordsCell", for: indexPath)
+        cell.textLabel?.text = texts[textNum].textWords[indexPath.row].textWord
         // Configure the cell...
-        cell.textLabel?.text = texts[indexPath.row].title
-        
+
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         indexNum = indexPath.row
-        performSegue(withIdentifier: "toTextViewController", sender: nil)
+        //print(indexNum)
+        performSegue(withIdentifier: "toRegistrationViewController", sender: nil)
     }
-    
-    
 
     /*
     // Override to support conditional editing of the table view.
@@ -114,13 +112,14 @@ class LibraryTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if (segue.identifier == "toTextViewController") {
-            let next = segue.destination as? TextViewController
-            next?.num = indexNum
-        }
-                // Get the new view controller using segue.destination.
+        // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "toRegistrationViewController") {
+            let next = segue.destination as? RegistrationViewController
+            next?.textNum = textNum.self
+            next?.wordNum = indexNum
+        }
     }
     
 

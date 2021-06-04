@@ -6,13 +6,36 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RegistrationViewController: UIViewController {
-
+    
+    var textNum = Int()
+    var wordNum = Int()
+    
+    var realm: Realm!
+    var texts: Results<Text>!
+    
+    @IBOutlet var englishTextField: UITextField!
+    @IBOutlet var japaneseTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        realm = try! Realm()
+        
+        //print(textNum)
+        //print(wordNum)
+        
+        texts = realm.objects(Text.self)
+        englishTextField.text = texts[textNum].textWords[wordNum].textWord
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        texts = realm.objects(Text.self)
     }
     
 

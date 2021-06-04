@@ -41,8 +41,9 @@ class RegisterTextViewController: UIViewController {
         
         try! realm.write {
             realm.add(text)
-            print(text)
+            //print(text)
         }
+       
     }
     
 
