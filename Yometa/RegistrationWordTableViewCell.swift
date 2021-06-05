@@ -9,6 +9,7 @@ import UIKit
 
 class RegistrationWordTableViewCell: UITableViewCell {
     
+    @IBOutlet var gazou: UIImageView!
     @IBOutlet var english: UILabel!
     @IBOutlet var japanese: UILabel!
 
