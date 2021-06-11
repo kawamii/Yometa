@@ -71,6 +71,21 @@ class AllWordsTableViewController: UITableViewController {
         //print(indexNum)
         performSegue(withIdentifier: "toRegistrationViewController", sender: nil)
     }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+      {
+        return true
+      }
+      //スワイプしたセルを削除
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+          try! realm.write {
+            realm.delete(texts[textNum].textWords[indexPath.row])
+          }
+          tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
+        }
+      }
+
 
     /*
     // Override to support conditional editing of the table view.

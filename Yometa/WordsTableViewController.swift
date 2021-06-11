@@ -69,7 +69,20 @@ class WordsTableViewController: UITableViewController {
     override func tableView (_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 61
     }
-     
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+      {
+        return true
+      }
+      //スワイプしたセルを削除
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+          try! realm.write {
+            realm.delete(texts[textNum].registrationWords[indexPath.row])
+          }
+          tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
+        }
+      }
     
 
     /*

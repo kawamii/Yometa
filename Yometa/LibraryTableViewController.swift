@@ -72,6 +72,21 @@ class LibraryTableViewController: UITableViewController {
         performSegue(withIdentifier: "toTextViewController", sender: nil)
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+      {
+        return true
+      }
+      //スワイプしたセルを削除　
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+          try! realm.write {
+            realm.delete(texts[indexPath.row].registrationWords)
+            realm.delete(texts[indexPath.row].textWords)
+            realm.delete(texts[indexPath.row])
+          }
+          tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
+        }
+      }
     
 
     /*
