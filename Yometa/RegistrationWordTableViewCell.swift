@@ -12,6 +12,7 @@ class RegistrationWordTableViewCell: UITableViewCell {
     @IBOutlet var gazou: UIImageView!
     @IBOutlet var english: UILabel!
     @IBOutlet var japanese: UILabel!
+    @IBOutlet var back: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

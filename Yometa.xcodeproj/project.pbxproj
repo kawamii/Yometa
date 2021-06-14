@@ -17,7 +17,10 @@
 		0009B7252663E51E00701232 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0009B7242663E51E00701232 /* RealmSwift */; };
 		0009B72A2663F71300701232 /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009B7292663F71300701232 /* TextData.swift */; };
 		0018604526698D9F000683E6 /* AllWordsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018604426698D9F000683E6 /* AllWordsTableViewCell.swift */; };
+		0027A8AE2674969C00F86715 /* 背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0027A8AD2674969C00F86715 /* 背景.jpg */; };
 		0045F46B266299E300516F68 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045F46A266299E300516F68 /* ScanViewController.swift */; };
+		00479BB426775B7B0089AC94 /* blue_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00479BB326775B7B0089AC94 /* blue_back.jpg */; };
+		00479BB926775B840089AC94 /* gray_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00479BB826775B840089AC94 /* gray_back.jpg */; };
 		00690C92266656C800358673 /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C91266656C800358673 /* LibraryTableViewCell.swift */; };
 		00690C972666918600358673 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C962666918600358673 /* WordsTableViewController.swift */; };
 		00690C9C266695D400358673 /* RegistrationWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C9B266695D400358673 /* RegistrationWordTableViewCell.swift */; };
@@ -60,7 +63,10 @@
 		0009B71C2663A47D00701232 /* RegisterTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTextViewController.swift; sourceTree = "<group>"; };
 		0009B7292663F71300701232 /* TextData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextData.swift; sourceTree = "<group>"; };
 		0018604426698D9F000683E6 /* AllWordsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsTableViewCell.swift; sourceTree = "<group>"; };
+		0027A8AD2674969C00F86715 /* 背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景.jpg"; sourceTree = "<group>"; };
 		0045F46A266299E300516F68 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		00479BB326775B7B0089AC94 /* blue_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_back.jpg; sourceTree = "<group>"; };
+		00479BB826775B840089AC94 /* gray_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gray_back.jpg; sourceTree = "<group>"; };
 		00690C91266656C800358673 /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 		00690C962666918600358673 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		00690C9B266695D400358673 /* RegistrationWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationWordTableViewCell.swift; sourceTree = "<group>"; };
@@ -133,6 +139,9 @@
 		008124F52659F85A002A6D0E /* Yometa */ = {
 			isa = PBXGroup;
 			children = (
+				00479BB826775B840089AC94 /* gray_back.jpg */,
+				00479BB326775B7B0089AC94 /* blue_back.jpg */,
+				0027A8AD2674969C00F86715 /* 背景.jpg */,
 				00724FCA26679CED00CDBDF5 /* icon.png */,
 				008124F62659F85A002A6D0E /* AppDelegate.swift */,
 				008124F82659F85A002A6D0E /* SceneDelegate.swift */,
@@ -287,7 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0027A8AE2674969C00F86715 /* 背景.jpg in Resources */,
+				00479BB926775B840089AC94 /* gray_back.jpg in Resources */,
 				00724FCB26679CED00CDBDF5 /* icon.png in Resources */,
+				00479BB426775B7B0089AC94 /* blue_back.jpg in Resources */,
 				008125032659F862002A6D0E /* LaunchScreen.storyboard in Resources */,
 				008125002659F862002A6D0E /* Assets.xcassets in Resources */,
 				008124FE2659F85A002A6D0E /* Main.storyboard in Resources */,

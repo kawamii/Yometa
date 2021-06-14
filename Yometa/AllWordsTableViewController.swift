@@ -37,6 +37,20 @@ class AllWordsTableViewController: UITableViewController {
         
         texts = realm.objects(Text.self)
         table.reloadData()
+        
+        // make UIImageView instance
+        let imageView = UIImageView(frame: CGRect.init(x:0, y:0, width: self.tableView.frame.width, height: self.tableView.frame.height))
+        // read image
+        let image = UIImage(named: "gray_back.jpg")
+        // set image to ImageView
+        imageView.image = image
+        /*
+        // set alpha value of imageView
+        imageView.alpha = 1.0
+        */
+        // set imageView to backgroundView of TableView
+        self.tableView.backgroundView = imageView
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,7 +74,13 @@ class AllWordsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "allWordsCell", for: indexPath)
         cell.textLabel?.text = texts[textNum].textWords[indexPath.row].textWord
+        cell.textLabel?.textColor = UIColor.black
         // Configure the cell...
+        
+        // cellの背景を透過
+        cell.backgroundColor = UIColor.clear
+        // cell内のcontentViewの背景を透過
+        cell.contentView.backgroundColor = UIColor.clear
 
         return cell
     }

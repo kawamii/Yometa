@@ -31,6 +31,9 @@ class RegistrationViewController: UIViewController {
         englishTextField.text = texts[textNum].textWords[wordNum].textWord
 
         // Do any additional setup after loading the view.
+
+        
+
     }
     
     override func viewDidAppear(_ animated: Bool) {

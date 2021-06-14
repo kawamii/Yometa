@@ -28,6 +28,21 @@ class WordsTableViewController: UITableViewController {
         texts = realm.objects(Text.self)
         table.reloadData()
         
+        // make UIImageView instance
+        let imageView = UIImageView(frame: CGRect.init(x:0, y:0, width: self.tableView.frame.width, height: self.tableView.frame.height))
+        // read image
+        let image = UIImage(named: "gray_back.jpg")
+        // set image to ImageView
+        imageView.image = image
+        /*
+        // set alpha value of imageView
+        imageView.alpha = 1.0
+        */
+        // set imageView to backgroundView of TableView
+        self.tableView.backgroundView = imageView
+        
+        tableView.separatorStyle = .none
+        
         //print(textNum)
 
         // Uncomment the following line to preserve selection between presentations
@@ -62,6 +77,19 @@ class WordsTableViewController: UITableViewController {
         cell.english.text = texts[textNum].registrationWords[indexPath.row].english
         cell.japanese.text = texts[textNum].registrationWords[indexPath.row].japanese
         // Configure the cell...
+        
+        cell.back.layer.cornerRadius = 8
+        
+        /*
+        cell.back.layer.shadowColor = UIColor.black.cgColor
+        cell.back.layer.shadowOpacity = 1
+        cell.back.layer.shadowRadius = 8
+        cell.back.layer.shadowOffset = CGSize(width: 4, height: 4)
+ */
+        // cellの背景を透過
+        cell.backgroundColor = UIColor.clear
+        // cell内のcontentViewの背景を透過
+        cell.contentView.backgroundColor = UIColor.clear
 
         return cell
     }

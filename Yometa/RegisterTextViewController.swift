@@ -20,7 +20,8 @@ class RegisterTextViewController: UIViewController {
         // Do any additional setup after loading the view.
         realm = try! Realm()
         
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        //print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

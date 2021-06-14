@@ -33,14 +33,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ライブラリ" id="Wsi-pz-Q3x">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="78b-Oy-VKT">
-                                <connections>
-                                    <segue destination="QBS-Pt-7Oh" kind="show" id="RDg-OU-hct"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="search" id="5jv-fr-P5y"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="78b-Oy-VKT">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="QBS-Pt-7Oh" kind="show" id="RDg-OU-hct"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="table" destination="Eng-CX-Iyk" id="TJB-Ii-aQT"/>
@@ -294,10 +292,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGE-3W-M2l">
+                                            <rect key="frame" x="6" y="2" width="363" height="57"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB9-Lg-jcE">
                                             <rect key="frame" x="75" y="2" width="64" height="32.333333333333336"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2nu-lO-gIi">
@@ -310,7 +312,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oce-hf-bk3">
                                             <rect key="frame" x="75" y="34.333333333333336" width="48" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -318,12 +320,18 @@
                                         <constraint firstItem="2nu-lO-gIi" firstAttribute="centerY" secondItem="4YH-Zq-YEM" secondAttribute="centerY" id="69X-0p-8Lq"/>
                                         <constraint firstItem="2nu-lO-gIi" firstAttribute="leading" secondItem="4YH-Zq-YEM" secondAttribute="leading" constant="10" id="Asd-8J-rQr"/>
                                         <constraint firstItem="TB9-Lg-jcE" firstAttribute="top" secondItem="4YH-Zq-YEM" secondAttribute="top" constant="2" id="FRB-nz-McZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="CGE-3W-M2l" secondAttribute="trailing" constant="6" id="aDn-S0-yTz"/>
+                                        <constraint firstItem="CGE-3W-M2l" firstAttribute="top" secondItem="4YH-Zq-YEM" secondAttribute="top" constant="2" id="cDg-MD-Fm9"/>
+                                        <constraint firstAttribute="bottom" secondItem="CGE-3W-M2l" secondAttribute="bottom" constant="2" id="eXB-dT-AB0"/>
                                         <constraint firstItem="oce-hf-bk3" firstAttribute="leading" secondItem="2nu-lO-gIi" secondAttribute="trailing" constant="10" id="fkv-J4-xFV"/>
+                                        <constraint firstItem="CGE-3W-M2l" firstAttribute="leading" secondItem="4YH-Zq-YEM" secondAttribute="leading" constant="6" id="hHi-qL-LvA"/>
                                         <constraint firstItem="oce-hf-bk3" firstAttribute="top" secondItem="TB9-Lg-jcE" secondAttribute="bottom" id="jwc-hy-0Ns"/>
                                         <constraint firstItem="TB9-Lg-jcE" firstAttribute="leading" secondItem="2nu-lO-gIi" secondAttribute="trailing" constant="10" id="mga-z9-SqO"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
+                                    <outlet property="back" destination="CGE-3W-M2l" id="3xL-a6-3KB"/>
                                     <outlet property="english" destination="TB9-Lg-jcE" id="nva-GV-fII"/>
                                     <outlet property="gazou" destination="2nu-lO-gIi" id="bAj-Ep-Pjl"/>
                                     <outlet property="japanese" destination="oce-hf-bk3" id="mga-KV-iEm"/>

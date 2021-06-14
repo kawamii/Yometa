@@ -24,6 +24,7 @@ class TextViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.navigationItem.title = texts[num].title
+        
     }
     
     @IBAction func allWordsButton(_ sender: Any) {
@@ -51,7 +52,6 @@ class TextViewController: UIViewController {
             let next = segue.destination as? WordsTableViewController
             next?.textNum = num
         }
-        
      
     }
     

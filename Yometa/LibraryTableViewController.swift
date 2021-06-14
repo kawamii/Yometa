@@ -36,6 +36,22 @@ class LibraryTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "blue_back.jpg"), for: .default)
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        // make UIImageView instance
+        let imageView = UIImageView(frame: CGRect.init(x:0, y:0, width: self.tableView.frame.width, height: self.tableView.frame.height))
+        // read image
+        let image = UIImage(named: "gray_back.jpg")
+        // set image to ImageView
+        imageView.image = image
+        /*
+        // set alpha value of imageView
+        imageView.alpha = 1.0
+        */
+        // set imageView to backgroundView of TableView
+        self.tableView.backgroundView = imageView
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -62,6 +78,12 @@ class LibraryTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = texts[indexPath.row].title
+        cell.textLabel?.textColor = UIColor.black
+        
+        // cellの背景を透過
+        cell.backgroundColor = UIColor.clear
+        // cell内のcontentViewの背景を透過
+        cell.contentView.backgroundColor = UIColor.clear
         
         return cell
     }
