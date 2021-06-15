@@ -24,4 +24,5 @@ class TextWord: Object {
 class RegistrationWord: Object {
     @objc dynamic var english: String = ""
     @objc dynamic var japanese: String = ""
+    @objc dynamic var check: Bool = false
 }

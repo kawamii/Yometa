@@ -40,6 +40,8 @@ class LibraryTableViewController: UITableViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(named: "blue_back.jpg"), for: .default)
         self.navigationController?.navigationBar.tintColor = UIColor.white
         
+        // ナビゲーションバーのタイトルの文字色
+        self.navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         // make UIImageView instance
         let imageView = UIImageView(frame: CGRect.init(x:0, y:0, width: self.tableView.frame.width, height: self.tableView.frame.height))
         // read image

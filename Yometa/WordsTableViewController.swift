@@ -90,7 +90,13 @@ class WordsTableViewController: UITableViewController {
         cell.backgroundColor = UIColor.clear
         // cell内のcontentViewの背景を透過
         cell.contentView.backgroundColor = UIColor.clear
-
+        
+        if texts[textNum].registrationWords[indexPath.row].check == true {
+            cell.gazou.image = UIImage(named: "ok.jpg")
+        } else {
+            cell.gazou.image = UIImage(named: "mada.jpg")
+        }
+        
         return cell
     }
     
@@ -111,6 +117,27 @@ class WordsTableViewController: UITableViewController {
           tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
         }
       }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let x = tableView.dequeueReusableCell(withIdentifier: "registrationCell", for: indexPath) as! RegistrationWordTableViewCell
+        
+        try! realm.write {
+            texts[textNum].registrationWords[indexPath.row].check = !(texts[textNum].registrationWords[indexPath.row].check)
+        }
+        
+        if texts[textNum].registrationWords[indexPath.row].check {
+            x.gazou.image = UIImage(named: "ok.jpg")
+        } else {
+            x.gazou.image = UIImage(named: "mada.jpg")
+        }
+        
+        self.table.reloadRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+        
+    }
+    
+    
     
 
     /*

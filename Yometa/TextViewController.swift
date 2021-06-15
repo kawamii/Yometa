@@ -14,6 +14,9 @@ class TextViewController: UIViewController {
     
     var realm: Realm!
     var texts: Results<Text>!
+    
+    @IBOutlet var aWordButton: UIButton!
+    @IBOutlet var rWordButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,12 @@ class TextViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.navigationItem.title = texts[num].title
+
+        self.aWordButton.layer.masksToBounds = true
+        self.aWordButton.layer.cornerRadius = 8.0
+        
+        self.rWordButton.layer.masksToBounds = true
+        self.rWordButton.layer.cornerRadius = 8.0
         
     }
     

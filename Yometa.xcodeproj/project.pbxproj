@@ -18,6 +18,7 @@
 		0009B72A2663F71300701232 /* TextData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009B7292663F71300701232 /* TextData.swift */; };
 		0018604526698D9F000683E6 /* AllWordsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0018604426698D9F000683E6 /* AllWordsTableViewCell.swift */; };
 		0027A8AE2674969C00F86715 /* 背景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0027A8AD2674969C00F86715 /* 背景.jpg */; };
+		00328DE826778C7A00899931 /* yellow_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00328DE726778C7A00899931 /* yellow_back.jpg */; };
 		0045F46B266299E300516F68 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0045F46A266299E300516F68 /* ScanViewController.swift */; };
 		00479BB426775B7B0089AC94 /* blue_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00479BB326775B7B0089AC94 /* blue_back.jpg */; };
 		00479BB926775B840089AC94 /* gray_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00479BB826775B840089AC94 /* gray_back.jpg */; };
@@ -34,6 +35,11 @@
 		008125032659F862002A6D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008125012659F862002A6D0E /* LaunchScreen.storyboard */; };
 		0081250E2659F863002A6D0E /* YometaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081250D2659F863002A6D0E /* YometaTests.swift */; };
 		008125192659F863002A6D0E /* YometaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008125182659F863002A6D0E /* YometaUITests.swift */; };
+		009C3508267872F000D8E9D8 /* blue_back2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009C3507267872F000D8E9D8 /* blue_back2.jpg */; };
+		009C350D267874D100D8E9D8 /* blue_back3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009C350C267874D100D8E9D8 /* blue_back3.jpg */; };
+		009C35122678757400D8E9D8 /* blue_back4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009C35112678757400D8E9D8 /* blue_back4.jpg */; };
+		009C351F2678887300D8E9D8 /* mada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009C351E2678887200D8E9D8 /* mada.jpg */; };
+		009C352426788ECB00D8E9D8 /* ok.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 009C352326788ECB00D8E9D8 /* ok.jpg */; };
 		00C9C7AC266117E600C8697D /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C9C7AB266117E600C8697D /* LibraryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +70,7 @@
 		0009B7292663F71300701232 /* TextData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextData.swift; sourceTree = "<group>"; };
 		0018604426698D9F000683E6 /* AllWordsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsTableViewCell.swift; sourceTree = "<group>"; };
 		0027A8AD2674969C00F86715 /* 背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "背景.jpg"; sourceTree = "<group>"; };
+		00328DE726778C7A00899931 /* yellow_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellow_back.jpg; sourceTree = "<group>"; };
 		0045F46A266299E300516F68 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		00479BB326775B7B0089AC94 /* blue_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_back.jpg; sourceTree = "<group>"; };
 		00479BB826775B840089AC94 /* gray_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gray_back.jpg; sourceTree = "<group>"; };
@@ -86,6 +93,11 @@
 		008125142659F863002A6D0E /* YometaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YometaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		008125182659F863002A6D0E /* YometaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YometaUITests.swift; sourceTree = "<group>"; };
 		0081251A2659F863002A6D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009C3507267872F000D8E9D8 /* blue_back2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_back2.jpg; sourceTree = "<group>"; };
+		009C350C267874D100D8E9D8 /* blue_back3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_back3.jpg; sourceTree = "<group>"; };
+		009C35112678757400D8E9D8 /* blue_back4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blue_back4.jpg; sourceTree = "<group>"; };
+		009C351E2678887200D8E9D8 /* mada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mada.jpg; path = ../../mada.jpg; sourceTree = "<group>"; };
+		009C352326788ECB00D8E9D8 /* ok.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ok.jpg; sourceTree = "<group>"; };
 		00C9C7AB266117E600C8697D /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +151,12 @@
 		008124F52659F85A002A6D0E /* Yometa */ = {
 			isa = PBXGroup;
 			children = (
+				009C352326788ECB00D8E9D8 /* ok.jpg */,
+				009C351E2678887200D8E9D8 /* mada.jpg */,
+				009C35112678757400D8E9D8 /* blue_back4.jpg */,
+				009C350C267874D100D8E9D8 /* blue_back3.jpg */,
+				009C3507267872F000D8E9D8 /* blue_back2.jpg */,
+				00328DE726778C7A00899931 /* yellow_back.jpg */,
 				00479BB826775B840089AC94 /* gray_back.jpg */,
 				00479BB326775B7B0089AC94 /* blue_back.jpg */,
 				0027A8AD2674969C00F86715 /* 背景.jpg */,
@@ -296,12 +314,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009C352426788ECB00D8E9D8 /* ok.jpg in Resources */,
+				009C350D267874D100D8E9D8 /* blue_back3.jpg in Resources */,
 				0027A8AE2674969C00F86715 /* 背景.jpg in Resources */,
 				00479BB926775B840089AC94 /* gray_back.jpg in Resources */,
+				009C35122678757400D8E9D8 /* blue_back4.jpg in Resources */,
+				00328DE826778C7A00899931 /* yellow_back.jpg in Resources */,
 				00724FCB26679CED00CDBDF5 /* icon.png in Resources */,
 				00479BB426775B7B0089AC94 /* blue_back.jpg in Resources */,
+				009C3508267872F000D8E9D8 /* blue_back2.jpg in Resources */,
 				008125032659F862002A6D0E /* LaunchScreen.storyboard in Resources */,
 				008125002659F862002A6D0E /* Assets.xcassets in Resources */,
+				009C351F2678887300D8E9D8 /* mada.jpg in Resources */,
 				008124FE2659F85A002A6D0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -68,6 +68,8 @@ class ScanViewController: UIViewController {
         text = text.replacingOccurrences(of: ",", with: "")
         text = text.replacingOccurrences(of: ".", with: "")
         text = text.replacingOccurrences(of: "?", with: "")
+        text = text.replacingOccurrences(of: "\"", with: "")
+        
         //print(text)
         textWords = text.components(separatedBy: " ")
         textWords.sort()
