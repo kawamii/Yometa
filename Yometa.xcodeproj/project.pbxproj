@@ -25,7 +25,6 @@
 		00690C92266656C800358673 /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C91266656C800358673 /* LibraryTableViewCell.swift */; };
 		00690C972666918600358673 /* WordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C962666918600358673 /* WordsTableViewController.swift */; };
 		00690C9C266695D400358673 /* RegistrationWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00690C9B266695D400358673 /* RegistrationWordTableViewCell.swift */; };
-		00724FCB26679CED00CDBDF5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00724FCA26679CED00CDBDF5 /* icon.png */; };
 		0078DA8026694758008EA53D /* AllWordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0078DA7F26694758008EA53D /* AllWordsTableViewController.swift */; };
 		008124F72659F85A002A6D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124F62659F85A002A6D0E /* AppDelegate.swift */; };
 		008124F92659F85A002A6D0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008124F82659F85A002A6D0E /* SceneDelegate.swift */; };
@@ -77,7 +76,6 @@
 		00690C91266656C800358673 /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 		00690C962666918600358673 /* WordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableViewController.swift; sourceTree = "<group>"; };
 		00690C9B266695D400358673 /* RegistrationWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationWordTableViewCell.swift; sourceTree = "<group>"; };
-		00724FCA26679CED00CDBDF5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0078DA7F26694758008EA53D /* AllWordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWordsTableViewController.swift; sourceTree = "<group>"; };
 		008124F32659F85A002A6D0E /* Yometa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yometa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008124F62659F85A002A6D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 				00479BB826775B840089AC94 /* gray_back.jpg */,
 				00479BB326775B7B0089AC94 /* blue_back.jpg */,
 				0027A8AD2674969C00F86715 /* 背景.jpg */,
-				00724FCA26679CED00CDBDF5 /* icon.png */,
 				008124F62659F85A002A6D0E /* AppDelegate.swift */,
 				008124F82659F85A002A6D0E /* SceneDelegate.swift */,
 				008124FA2659F85A002A6D0E /* ViewController.swift */,
@@ -320,7 +317,6 @@
 				00479BB926775B840089AC94 /* gray_back.jpg in Resources */,
 				009C35122678757400D8E9D8 /* blue_back4.jpg in Resources */,
 				00328DE826778C7A00899931 /* yellow_back.jpg in Resources */,
-				00724FCB26679CED00CDBDF5 /* icon.png in Resources */,
 				00479BB426775B7B0089AC94 /* blue_back.jpg in Resources */,
 				009C3508267872F000D8E9D8 /* blue_back2.jpg in Resources */,
 				008125032659F862002A6D0E /* LaunchScreen.storyboard in Resources */,
@@ -541,7 +537,7 @@
 		0081251E2659F863002A6D0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
@@ -562,7 +558,7 @@
 		0081251F2659F863002A6D0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;

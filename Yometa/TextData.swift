@@ -10,6 +10,9 @@ import RealmSwift
 
 class Text: Object {
     @objc dynamic var title: String = ""
+    
+    @objc dynamic var date = Date()
+    @objc dynamic var times: Int = 0
     let textWords = List<TextWord>()
     let registrationWords = List<RegistrationWord>()
     override static func primaryKey() -> String? {
