@@ -1,4 +1,5 @@
 # Yometa
+![アプリアイコン](https://user-images.githubusercontent.com/75970153/142892557-2f1b894d-fd57-4f34-9795-3e04628b9069.jpg)
 
 ## 概要
 - 文字認識を利用した英単語学習アプリ
