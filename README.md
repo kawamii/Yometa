@@ -13,13 +13,13 @@
 - 取得した単語一覧から分からなかったものを登録できる
 - 登録した単語は一覧で見ることができ，覚えたらチェックをつけることができる
 
+## 実装言語
+- Swift
+
 ## 使用した技術
 - UIKit
 - Realm
 - Vision.framework
 
-## アプリの中身
-### スタート画面
-- 今の気持ちを書き込むボタン: 思い出入力画面へ遷移
-- あの時を思い出すボタン: 思い出一覧画面へ遷移
-- ANOTOKINOとはボタン: 説明ポップアップ画面へ遷移
+## 動作紹介
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MBGdjdKUh98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
